@@ -1,0 +1,2 @@
+ALTER TABLE dbo.Simpsons_Transaction_Count
+ADD ID INT IDENTITY(1,1) PRIMARY KEY;

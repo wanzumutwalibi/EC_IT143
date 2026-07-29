@@ -1,0 +1,1 @@
+EXEC dbo.usp_Load_Simpsons_Transaction_Count;

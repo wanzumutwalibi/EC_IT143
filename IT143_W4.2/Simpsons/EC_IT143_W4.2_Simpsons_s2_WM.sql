@@ -1,0 +1,3 @@
+-- Answer:
+-- I will count the transactions for each member
+-- using the dbo.FBS_Visa_Costomo table.

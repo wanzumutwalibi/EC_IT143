@@ -1,0 +1,2 @@
+-- Step 1: Start with a question
+-- Question: How many transactions does each family member have?
