@@ -1,0 +1,13 @@
+/*
+NAME: EC_IT143_6.3_fwt_s2_WM.sql
+PURPOSE: Begin creating an answer.
+*/
+
+/*
+Current progress:
+I need a way to automatically update the modification date
+when a record changes.
+
+Next step:
+I will create an AFTER UPDATE trigger.
+*/

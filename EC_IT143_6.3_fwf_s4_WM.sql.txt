@@ -1,0 +1,7 @@
+/*
+Research Resource:
+
+Microsoft SQL Server String Functions
+
+https://learn.microsoft.com/en-us/sql/t-sql/functions/string-functions-transact-sql
+*/

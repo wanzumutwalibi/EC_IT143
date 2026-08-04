@@ -1,0 +1,11 @@
+/*
+NAME: EC_IT143_6.3_fwt_s6_WM.sql
+PURPOSE: Ask the next question.
+*/
+
+/*
+Next Question:
+
+How can I improve the trigger to track
+the last modified user automatically?
+*/

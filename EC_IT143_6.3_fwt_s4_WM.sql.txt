@@ -1,0 +1,15 @@
+CREATE TRIGGER dbo.trg_UpdateCustomerModifiedDate
+ON dbo.t_w3_schools_customers
+AFTER UPDATE
+AS
+BEGIN
+
+UPDATE dbo.t_w3_schools_customers
+SET 
+LastModifiedDate = GETDATE(),
+LastModifiedBy = SUSER_NAME()
+
+FROM inserted i
+WHERE dbo.t_w3_schools_customers.CustomerID = i.CustomerID;
+
+END;

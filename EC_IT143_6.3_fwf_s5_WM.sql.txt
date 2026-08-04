@@ -1,0 +1,22 @@
+USE EC_IT143_DA;
+GO
+
+CREATE FUNCTION dbo.fn_GetFirstName
+(
+@CustomerName varchar(100)
+)
+
+RETURNS varchar(100)
+
+AS
+BEGIN
+
+DECLARE @FirstName varchar(100);
+
+SET @FirstName =
+LEFT(@CustomerName, CHARINDEX(' ', @CustomerName)-1);
+
+RETURN @FirstName;
+
+END;
+GO

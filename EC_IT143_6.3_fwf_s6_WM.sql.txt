@@ -1,0 +1,13 @@
+USE EC_IT143_DA;
+GO
+
+SELECT
+CustomerName,
+
+LEFT(CustomerName, CHARINDEX(' ', CustomerName)-1)
+AS Query_Result,
+
+dbo.fn_GetFirstName(CustomerName)
+AS Function_Result
+
+FROM dbo.t_w3_schools_customers;

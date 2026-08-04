@@ -1,0 +1,8 @@
+/*
+Research:
+SQL Server triggers execute automatically after INSERT,
+UPDATE, or DELETE operations.
+
+Resource:
+https://learn.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql
+*/

@@ -1,0 +1,8 @@
+/*
+Current Answer:
+
+I need to separate the first word from ContactName.
+
+Next step:
+Create a SQL query using string functions.
+*/

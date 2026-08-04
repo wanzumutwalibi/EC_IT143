@@ -1,0 +1,14 @@
+/*
+NAME: EC_IT143_6.3_fwt_s5_WM.sql
+PURPOSE: Test results of the AFTER UPDATE trigger.
+*/
+
+/*
+The trigger was tested by updating CustomerName.
+The LastModifiedDate and LastModifiedBy columns
+were automatically updated as expected.
+*/
+
+SELECT *
+FROM dbo.t_w3_schools_customers
+WHERE CustomerID = 1;

@@ -1,0 +1,9 @@
+/*
+NAME: EC_IT143_6.3_fwt_s1_WM.sql
+PURPOSE: Start with a question.
+*/
+
+/*
+Question:
+How can I keep track of when a customer record is modified?
+*/
