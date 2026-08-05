@@ -1,0 +1,66 @@
+/*
+Name: Wanzu Mutwalibi
+Assignment: W6.4 Performance Analysis
+Database: AdventureWorks2022
+*/
+
+
+USE [AdventureWorks2022]
+GO
+
+
+-- Query 1: Person.Person
+-- Missing Index Recommendation (80.6841%)
+
+SELECT *
+FROM Person.Person
+WHERE FirstName = 'Ken';
+GO
+
+
+-- Create recommended index
+
+CREATE NONCLUSTERED INDEX IX_Person_FirstName
+ON [Person].[Person] ([FirstName]);
+GO
+
+
+-- Run query after index creation
+
+SELECT *
+FROM Person.Person
+WHERE FirstName = 'Ken';
+GO
+
+
+
+-- Query 2: Sales.SalesOrderDetail
+-- Missing Index Recommendation (88.8597%)
+
+SELECT *
+FROM Sales.SalesOrderDetail
+WHERE SpecialOfferID = 1;
+GO
+
+
+-- Create recommended index
+
+CREATE NONCLUSTERED INDEX IX_SalesOrderDetail_SpecialOfferID
+ON [Sales].[SalesOrderDetail] ([SpecialOfferID])
+INCLUDE ([CarrierTrackingNumber],
+         [OrderQty],
+         [ProductID],
+         [UnitPrice],
+         [UnitPriceDiscount],
+         [LineTotal],
+         [rowguid],
+         [ModifiedDate]);
+GO
+
+
+-- Run query after index creation
+
+SELECT *
+FROM Sales.SalesOrderDetail
+WHERE SpecialOfferID = 1;
+GO
